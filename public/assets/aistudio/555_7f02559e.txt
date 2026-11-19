@@ -1,0 +1,1323 @@
+# THE CODEFATHER — MASTER PROJECT SPECIFICATION V5
+## Complete Final Specification — Website, Admin Dashboard, Backend & Database
+
+**Brand Name:** THE CODEFATHER  
+**Brand Tagline:** THINK • CODE • CREATE  
+**Project Type:** Personal Portfolio Website + Full Admin Dashboard + CMS + Backend  
+**Database:** MySQL  
+**Languages:** Arabic & English  
+**Default Website Theme:** Dark Techn  
+**Theme Count:** Exactly 20 approved themes
+
+---
+
+# 1. PROJECT OVERVIEW
+
+Build a complete, modern, professional personal portfolio website under the brand name **THE CODEFATHER**.
+
+The project must include three integrated parts:
+
+1. **Public Website:** A premium, responsive portfolio presenting personal information, skills, education, projects, and contact details.
+2. **Admin Dashboard:** A secure control panel for managing all website content and settings without editing source code.
+3. **Backend & Database:** A reliable backend connected to MySQL, handling authentication, content management, publishing, media, messages, notifications, backups, and all administrative operations.
+
+This must be a functional, production-ready application, not just a static design or frontend prototype.
+
+# 2. BRAND IDENTITY
+
+Brand name: **THE CODEFATHER**
+
+Tagline: **THINK • CODE • CREATE**
+
+Create a custom text-based Wordmark for the brand.
+
+Visual identity:
+- Black, silver, and purple as the main brand identity colors.
+- Modern, premium, technology-inspired appearance.
+- Clean typography and precise spacing.
+- Suitable for both light and dark backgrounds.
+- Provide appropriate logo variations for different backgrounds.
+- The logo must remain readable across desktop and mobile.
+
+# 3. DESIGN DIRECTION
+
+The website must have a premium, modern, elegant, and technology-oriented visual style.
+
+General requirements:
+- Modern UI/UX.
+- Clean layouts and consistent spacing.
+- Smooth animations and transitions.
+- Professional typography.
+- High-quality icons.
+- Carefully designed cards and sections.
+- Consistent visual hierarchy.
+- Responsive layouts.
+- Accessible color contrast.
+- No unnecessary visual clutter.
+
+The default public website appearance must use the **Dark Techn** theme.
+
+Do not use a large personal photograph in the Hero section by default. Keep the Hero focused on the brand, introduction, and visual identity.
+
+# 4. THEME SYSTEM — EXACTLY 20 APPROVED THEMES
+
+Implement a complete Dynamic Theme Switcher containing exactly the following 20 themes.
+
+**Strict requirements:**
+- Use the exact theme names and HEX codes listed below.
+- Each theme contains exactly four approved colors.
+- Do not change, replace, approximate, or invent any of these HEX values.
+- Do not add extra themes.
+- Do not remove any theme.
+- Each theme must have a properly designed color-role mapping.
+- Use the colors intelligently across backgrounds, surfaces, text, accents, borders, and interactive elements.
+- Maintain readable contrast even when a palette contains light or similar colors.
+- Theme changes must apply instantly without reloading the page.
+- Save the selected theme persistently.
+- Include a reset option to return to the default theme.
+- Show a visual preview of each theme before selecting it.
+- The selected theme must remain active when navigating between pages.
+- All public website components must respect the active theme.
+
+## Official Theme Palette
+
+### 01. Dark Techn
+- `#2C2C2C`
+- `#4A4A4A`
+- `#7B2CBF`
+- `#00A8FF`
+
+### 02. Neon Purple
+- `#7B2CBF`
+- `#9D4EDD`
+- `#E02F9D`
+- `#FF4DC4`
+
+### 03. Cyber Blue
+- `#00509E`
+- `#00A8FF`
+- `#00D2FF`
+- `#00F0FF`
+
+### 04. Matrix Green
+- `#0A5C36`
+- `#10B981`
+- `#00FF41`
+- `#7FFF00`
+
+### 05. Crimson Red
+- `#8B0000`
+- `#DC143C`
+- `#FF0000`
+- `#FF7F50`
+
+### 06. Ocean Blue
+- `#003B5C`
+- `#007BFF`
+- `#00C4CC`
+- `#40E0D0`
+
+### 07. Forest Green
+- `#1B4332`
+- `#2D6A4F`
+- `#40916C`
+- `#52B788`
+
+### 08. Sunset Orange
+- `#C1121F`
+- `#E85D04`
+- `#F48C06`
+- `#FFBA08`
+
+### 09. Royal Indigo
+- `#2B0B50`
+- `#4B0082`
+- `#673AB7`
+- `#8C9EFF`
+
+### 10. Elegant Gold
+- `#D4AF37`
+- `#C5A059`
+- `#B89B72`
+- `#F5F5DC`
+
+### 11. Minimal Light
+- `#FFFFFF`
+- `#D3D3D3`
+- `#A9A9A9`
+- `#C0C0C0`
+
+### 12. Minimal Dark
+- `#121212`
+- `#2C2C2C`
+- `#808080`
+- `#F8F9FA`
+
+### 13. Pastel Pink
+- `#FFB6C1`
+- `#FF69B4`
+- `#FFC0CB`
+- `#FFE4E1`
+
+### 14. Pastel Mint
+- `#98FF98`
+- `#8FBC8F`
+- `#B2FFDA`
+- `#00FA9A`
+
+### 15. Pastel Blue
+- `#ADD8E6`
+- `#87CEEB`
+- `#B0E0E6`
+- `#1E90FF`
+
+### 16. Nordic Gray
+- `#708090`
+- `#B0C4DE`
+- `#778899`
+- `#D3D3D3`
+
+### 17. Teal Dream
+- `#008080`
+- `#20B2AA`
+- `#00CED1`
+- `#40E0D0`
+
+### 18. Violet Dream
+- `#8A2BE2`
+- `#B57EDC`
+- `#DDA0DD`
+- `#E6E6FA`
+
+### 19. Rose Gold
+- `#B76E79`
+- `#E8A2A2`
+- `#C07C68`
+- `#F7D8D5`
+
+### 20. Aqua Mint
+- `#006666`
+- `#00B3B3`
+- `#66CDAA`
+- `#E0FFFF`
+
+## Theme Implementation
+
+Create a centralized theme configuration system using CSS variables or an equivalent design-token system.
+
+Each theme must define consistent semantic roles:
+- Primary background.
+- Secondary background.
+- Card and surface background.
+- Primary text.
+- Secondary text.
+- Primary accent.
+- Secondary accent.
+- Borders.
+- Buttons.
+- Hover and active states.
+- Focus indicators.
+
+The four HEX colors of each theme must remain unchanged in the official palette configuration. Additional neutral shades may only be generated or selected as supporting UI values when necessary for readability; they must not replace the four official colors.
+
+# 5. PUBLIC WEBSITE STRUCTURE
+
+Create the following main pages:
+
+1. Home.
+2. About Me & Skills.
+3. Projects.
+4. Contact.
+
+The website must have a consistent navigation experience across all pages.
+
+## 5.1 Home Page
+
+Include these sections:
+
+1. Hero Section.
+2. About Me.
+3. Skills Overview.
+4. Featured Projects.
+5. Education.
+6. Contact / Call to Action.
+7. Footer.
+
+### Hero Section
+- Display THE CODEFATHER identity.
+- Include the tagline THINK • CODE • CREATE.
+- Include a concise personal introduction.
+- Include clear navigation actions.
+- Use subtle premium animations.
+- Do not add a large personal photograph by default.
+
+### About Me
+- Present personal information and a professional introduction.
+- Use clean, organized content cards.
+- All content must be editable through the Admin Dashboard.
+
+### Skills Overview
+- Display skills using a modern Skills Icon Grid.
+- Each skill should have an icon, name, and optional description or proficiency information.
+- Organize skills into categories when appropriate.
+- Use responsive grid layouts.
+- Skill content must be editable through the dashboard.
+
+### Featured Projects
+- Display selected projects on the Home Page.
+- Each project card should include relevant information and an image or preview when available.
+- Each project must have its own independent details page.
+- Include a clear action to view project details.
+
+### Education
+- Display education information using the approved Education Timeline described in Section 7.
+
+### Contact / Call to Action
+- Provide a clear way to contact the website owner.
+- Include a link to the Contact page.
+- Keep the section visually consistent with the website theme.
+
+# 6. NAVBAR & RESPONSIVE NAVIGATION
+
+Create a fixed Glassmorphism Navbar.
+
+Requirements:
+- Glass effect with appropriate transparency and blur.
+- Remains visible while scrolling.
+- Premium and minimal appearance.
+- Brand logo or wordmark.
+- Navigation links.
+- Theme switcher.
+- Language switcher.
+- Responsive mobile navigation.
+
+## Mobile Navigation
+- Display a Hamburger Menu button on mobile.
+- Clicking it opens the navigation menu.
+- Clicking the close button closes it.
+- Clicking outside the menu closes it.
+- Selecting a navigation link closes the menu.
+- Prevent layout overflow.
+- Ensure accessibility and keyboard navigation.
+
+# 7. EDUCATION TIMELINE — APPROVED DESIGN
+
+Create a distinctive Education Timeline covering **2006–2026**.
+
+The timeline must follow these exact design decisions:
+
+- Horizontal timeline on desktop.
+- Vertical timeline on mobile.
+- Black and gold visual identity.
+- Elegant, cinematic presentation.
+- Only years that contain actual events should display timeline points.
+- Empty years must not display unnecessary markers.
+- Multiple events must be supported within the same year.
+- Each event must support its own image and detailed information.
+
+## Interaction
+
+When the user selects an event:
+- Display the event image on the left.
+- Display the event details on the right.
+- On mobile, rearrange the content vertically.
+- Include Previous and Next navigation controls.
+- Allow navigation between events in the same year.
+- Allow navigation between available years.
+- Do not force the user to navigate through empty years.
+
+## Animation
+- Smooth Fade transitions.
+- Subtle Slide transitions.
+- Elegant event-selection animation.
+- Avoid excessive animation or performance-heavy effects.
+
+## Content Management
+
+The Admin Dashboard must allow the administrator to:
+- Add an education event.
+- Edit an event.
+- Delete an event.
+- Assign a year.
+- Upload an event image.
+- Add titles and descriptions in Arabic and English.
+- Reorder events.
+- Control visibility and publication status.
+
+# 8. PROJECTS SYSTEM
+
+Create a complete Projects section.
+
+Each project must support:
+- Project title.
+- Short description.
+- Full description.
+- Project image or gallery.
+- Technologies used.
+- Project category.
+- Completion date or year.
+- Optional external project link.
+- Optional source-code link.
+- Featured status.
+- Publication status.
+
+Each project must have its own dedicated details page.
+
+The project details page should have:
+- Project title.
+- Main image or preview.
+- Full project description.
+- Technologies and tools.
+- Additional images when available.
+- Relevant external links.
+- Related projects when appropriate.
+
+All project information must be manageable through the Admin Dashboard.
+
+# 9. CONTACT SYSTEM
+
+Create a professional Contact page.
+
+Include:
+- Contact form.
+- Name field.
+- Email field.
+- Subject field.
+- Message field.
+- Validation.
+- Success and error messages.
+- Spam protection and server-side validation.
+
+Submitted messages must be saved in the MySQL database and displayed in the Admin Dashboard.
+
+The administrator must be able to:
+- View messages.
+- Read message details.
+- Mark messages as read or unread.
+- Archive messages.
+- Delete messages after confirmation.
+- Search and filter messages.
+- Track message status.
+
+# 10. DATABASE — MYSQL
+
+Use MySQL as the primary database.
+
+Design a normalized, maintainable database schema.
+
+Before implementation:
+- Identify all required entities.
+- Define relationships.
+- Define primary and foreign keys.
+- Define indexes where needed.
+- Avoid unnecessary duplication.
+- Use appropriate data types.
+- Apply database constraints.
+- Plan multilingual content storage.
+
+Prepare a complete ERD (Entity Relationship Diagram) before starting database implementation.
+
+The database should support, at minimum:
+- Admin users.
+- Authentication and sessions.
+- Two-factor authentication.
+- Recovery codes.
+- Personal information.
+- Skills and skill categories.
+- Projects.
+- Project images and media.
+- Education events.
+- Contact messages.
+- Website settings.
+- Theme settings.
+- Language settings.
+- Notifications.
+- Activity logs.
+- Backups metadata.
+- Multilingual content.
+- Publishing status and timestamps.
+
+Use migrations or an equivalent controlled database schema management approach.
+
+Do not store passwords or sensitive authentication secrets as plain text.
+
+# 11. ADMIN DASHBOARD
+
+Build a complete, secure, responsive Admin Dashboard.
+
+The dashboard must provide full control over the public website without requiring direct source-code edits.
+
+## Dashboard Design
+
+Use a premium dashboard design with two independent appearance modes:
+
+### Dark Dashboard Mode
+- Black.
+- Dark gray.
+- Gold accents.
+
+### Light Dashboard Mode
+- White.
+- Light gray.
+- Gold accents.
+
+The dashboard appearance mode must be independent of the public website's selected theme.
+
+The dashboard must support Arabic and English independently of the public website's selected language.
+
+## Sidebar
+
+Create a collapsible sidebar on desktop.
+
+Requirements:
+- Expandable and collapsible.
+- Clear navigation icons and labels.
+- Active-page indication.
+- Smooth transitions.
+
+On mobile:
+- Sidebar must behave as a drawer.
+- Provide a Menu button to open it.
+- Provide a close button.
+- Close it when the user selects a navigation item.
+- Close it when clicking outside the drawer.
+
+## Dashboard Overview
+
+Include useful overview cards and information, such as:
+- Total projects.
+- Published projects.
+- Draft projects.
+- Total messages.
+- Unread messages.
+- Recent activity.
+- Recent notifications.
+
+Use real database data, not hardcoded demo values.
+
+# 12. ADMIN DASHBOARD — CONTENT MANAGEMENT
+
+Provide management interfaces for:
+- Personal information.
+- About Me.
+- Skills and categories.
+- Projects.
+- Education Timeline.
+- Contact messages.
+- Images and media.
+- Website settings.
+- Theme settings.
+- Language settings.
+- SEO settings.
+- Notifications.
+- Administrator account settings.
+
+Every management section must support the appropriate create, view, edit, delete, search, filter, and status operations.
+
+Use confirmation dialogs for destructive actions.
+
+Provide undo or recovery functionality where technically appropriate.
+
+# 13. MESSAGES — HYBRID VIEW
+
+Implement the approved Hybrid Messages View.
+
+The interface must combine:
+1. A table or list of messages.
+2. A Side Panel displaying the selected message details.
+
+The user should be able to select a message without navigating to a separate page.
+
+Include:
+- Search.
+- Filters.
+- Read/unread status.
+- Message details.
+- Sender information.
+- Date and time.
+- Archive action.
+- Delete action with confirmation.
+
+The design must remain usable on mobile.
+
+# 14. AUTHENTICATION & SECURITY
+
+Implement secure administrator authentication.
+
+Login must support:
+- Username or email.
+- Password.
+- Two-Factor Authentication (2FA).
+
+## Two-Factor Authentication
+
+Use an authenticator application compatible with standard time-based one-time passwords (TOTP).
+
+Include:
+- Secure 2FA enrollment.
+- QR code setup.
+- Verification before enabling 2FA.
+- Authenticator verification during login.
+- One-time Recovery Codes.
+
+Recovery codes must:
+- Be generated securely.
+- Be shown to the administrator when generated.
+- Be stored securely as hashes.
+- Work only once.
+- Be invalidated after use.
+- Be replaceable by generating a new set.
+
+## Additional Security
+
+Implement:
+- Secure password hashing.
+- Secure session management.
+- CSRF protection where applicable.
+- Input validation.
+- Output escaping.
+- Protection against SQL injection.
+- Rate limiting.
+- Secure cookies.
+- Authorization checks.
+- Server-side access control.
+- Safe error handling.
+- Environment variables for secrets.
+- Secure file upload validation.
+- Protection against unauthorized access.
+
+Never expose private configuration, credentials, or secrets in frontend code.
+
+# 15. ADMIN DASHBOARD ACCESS & INITIAL SETUP
+
+Provide a dedicated administrator login route:
+
+`/admin/login`
+
+Example:
+
+`https://yourdomain.com/admin/login`
+
+The administrator must be able to access the dashboard directly using this route.
+
+## Initial Administrator Creation
+
+Create the first administrator through one of these secure methods:
+- A protected server-side setup command.
+- A temporary, protected initial setup wizard.
+
+Requirements:
+- Do not create hardcoded default administrator credentials.
+- Do not allow public administrator registration.
+- Require secure initial administrator setup.
+- Disable or permanently lock the initial setup process after the first administrator is created.
+- Do not leave setup routes publicly accessible.
+
+## Login Flow
+
+1. Administrator opens `/admin/login`.
+2. Enters username or email.
+3. Enters password.
+4. Completes 2FA verification.
+5. Receives access to the Admin Dashboard after successful authentication.
+
+## Admin Route Protection
+- Protect every administrative route server-side.
+- Redirect unauthenticated visitors to the login page.
+- Enforce authorization for all administrative operations.
+- Protect sessions.
+- Apply rate limiting.
+- Provide a secure password recovery process.
+
+The `/admin/login` link does not need to appear in the public Navbar.
+
+The administrator can save the login URL in browser bookmarks.
+
+# 16. PUBLISHING SYSTEM — INSTANT PUBLISH & DRAFT
+
+Implement two publishing workflows.
+
+## Instant Publish
+- Save changes.
+- Publish immediately.
+- Make published content available on the public website.
+
+## Draft & Publish
+- Save content as a draft.
+- Allow editing before publication.
+- Provide a preview of the draft.
+- Publish only after an explicit publishing action.
+
+Requirements:
+- Draft content must never appear on public pages.
+- Public APIs must never expose unpublished content.
+- Enforce publication rules on the server, not just in the frontend.
+- Clearly indicate whether content is Draft or Published.
+- Allow the administrator to edit and publish drafts later.
+
+# 17. PREVIEW BEFORE PUBLISHING
+
+Provide a preview function inside the Admin Dashboard.
+
+The administrator must be able to preview website content before publishing it.
+
+Requirements:
+- Preview the actual page layout.
+- Support Arabic and English previews.
+- Respect the selected website theme.
+- Preview draft content without exposing it publicly.
+- Provide a clear way to return to editing.
+- Ensure preview links are protected and cannot be used to expose private drafts publicly.
+
+# 18. NOTIFICATIONS
+
+Implement an integrated notification system.
+
+Support:
+- In-app notifications.
+- Email notifications.
+
+Examples:
+- New contact message.
+- Successful publication.
+- Important administrative events.
+- Backup completion or failure.
+- Security-related events.
+
+Include:
+- Notification list.
+- Read/unread status.
+- Notification timestamps.
+- Clear notification states.
+- Notification preferences in settings.
+
+Do not send unnecessary or repetitive notifications.
+
+# 19. ACTIVITY LOG & AUDIT SYSTEM
+
+Create a detailed activity log for important administrative actions.
+
+Record events such as:
+- Login and logout.
+- Failed login attempts.
+- Content creation.
+- Content updates.
+- Content deletion.
+- Publishing and unpublishing.
+- Settings changes.
+- Theme changes.
+- Language changes.
+- Administrator account changes.
+- Backup and restore operations.
+
+Each record should contain relevant information:
+- Action type.
+- Date and time.
+- Administrator identifier.
+- Affected resource.
+- Additional context where appropriate.
+
+Provide search and filtering options.
+
+Protect audit records against unauthorized modification.
+
+# 20. WEBSITE SETTINGS
+
+Create a centralized Settings section in the Admin Dashboard.
+
+Organize settings into clear categories:
+- General Settings.
+- Personal Information.
+- Website Appearance.
+- Theme Settings.
+- Language Settings.
+- SEO Settings.
+- Contact Settings.
+- Notification Settings.
+- Security Settings.
+- Backup Settings.
+- Media Settings.
+
+Changes must be validated and saved correctly.
+
+Avoid scattering important configuration options across unrelated dashboard pages.
+
+# 21. BILINGUAL LANGUAGE SYSTEM — ARABIC & ENGLISH
+
+The entire project must support two complete languages:
+1. Arabic.
+2. English.
+
+This requirement applies to:
+- Public Website.
+- Admin Dashboard.
+- Navigation.
+- Forms.
+- Buttons.
+- Messages.
+- Notifications.
+- Settings.
+- Authentication pages.
+- Validation and error messages.
+- Empty states.
+- All system interface elements.
+
+## Language Switcher
+
+Add a language toggle button to the public Navbar.
+
+When the current language is English, the switcher should display:
+
+`العربية`
+
+When the current language is Arabic, the switcher should display:
+
+`English`
+
+Clicking the button must switch the language immediately without a full page reload.
+
+The switcher must:
+- Preserve the current page whenever a translated equivalent exists.
+- Preserve the current page context.
+- Update all interface text.
+- Save the visitor's language preference.
+- Work correctly on desktop and mobile.
+
+## Arabic RTL Support
+
+When Arabic is selected:
+- Set the document direction to RTL.
+- Set the document language to Arabic.
+- Correctly align text and layouts.
+- Adapt navigation and sidebars.
+- Adapt cards, forms, tables, and buttons.
+- Correctly handle icons, arrows, and directional elements.
+- Ensure responsive layouts remain correct.
+
+## English LTR Support
+
+When English is selected:
+- Set the document direction to LTR.
+- Set the document language to English.
+- Use appropriate left-to-right alignment.
+- Ensure all components are displayed correctly.
+
+Do not merely translate text while leaving the layout direction unchanged.
+
+## Multilingual Content Management
+
+The administrator must be able to manage Arabic and English content independently.
+
+This includes:
+- Personal information.
+- About Me.
+- Skills.
+- Project titles and descriptions.
+- Education events.
+- Contact-related interface content.
+- SEO titles and descriptions.
+- Other editable website content.
+
+Do not automatically invent translations of personal information or project descriptions.
+
+Clearly indicate when a translation is missing.
+
+Allow the administrator to add or edit each language separately.
+
+## Admin Language Settings
+
+The Admin Dashboard must also have its own Arabic/English language switcher.
+
+The administrator must be able to change the dashboard language independently of the public website language.
+
+Save the dashboard language preference.
+
+The dashboard must fully support RTL and LTR layouts.
+
+## Language Persistence
+
+Save language preferences appropriately.
+
+The visitor's language preference and administrator's language preference must be managed independently.
+
+Provide a configurable default language.
+
+Use Arabic as the initial default language unless changed through the project configuration.
+
+## Multilingual SEO
+
+Implement:
+- Correct `hreflang` attributes.
+- Language-specific page titles.
+- Language-specific meta descriptions.
+- Appropriate canonical URLs.
+- Correct HTML `lang` attributes.
+- Search-engine-friendly language-specific URLs or routing.
+
+# 22. MEDIA MANAGEMENT
+
+Create a media management system.
+
+Allow the administrator to:
+- Upload images.
+- View uploaded media.
+- Organize media.
+- Select images for projects.
+- Select images for education events.
+- Replace images.
+- Delete unused images.
+
+Requirements:
+- Validate file types.
+- Validate file sizes.
+- Use safe file names.
+- Prevent executable uploads.
+- Store media in an organized structure.
+- Avoid broken image references.
+- Provide image previews.
+- Optimize images when appropriate.
+
+# 23. BACKUP & RESTORE SYSTEM
+
+Implement a reliable database backup and restore system.
+
+Support:
+- Daily automatic backups.
+- Weekly automatic backups.
+- Manual backups.
+
+Requirements:
+- Store backup metadata.
+- Record backup dates and statuses.
+- Provide backup history.
+- Allow authorized administrators to restore backups.
+- Verify backup integrity where possible.
+- Protect backup files from public access.
+- Apply a configurable retention policy.
+- Notify the administrator about backup success or failure.
+
+Restore operations must require explicit confirmation and appropriate safeguards.
+
+# 24. SEO
+
+Implement essential SEO features.
+
+Include:
+- Page titles.
+- Meta descriptions.
+- Open Graph metadata.
+- Social sharing previews.
+- Sitemap generation.
+- Robots.txt.
+- Canonical URLs.
+- Structured data where appropriate.
+- Multilingual SEO support.
+- Clean URL structure.
+
+All relevant SEO fields must be manageable through the Admin Dashboard.
+
+# 25. PERFORMANCE
+
+Optimize the website for speed and reliability.
+
+Include:
+- Efficient database queries.
+- Image optimization.
+- Lazy loading where appropriate.
+- Code splitting where appropriate.
+- Efficient frontend rendering.
+- Caching where suitable.
+- Minimized unnecessary requests.
+- Avoidance of unnecessary animations.
+- Proper asset loading.
+
+Do not sacrifice functionality or accessibility for visual effects.
+
+# 26. ERROR HANDLING
+
+Implement consistent error handling across the application.
+
+Include:
+- User-friendly error messages.
+- Form validation feedback.
+- Server-side error handling.
+- Logging of important technical errors.
+- Proper handling of missing resources.
+- Safe handling of failed uploads.
+- Database error handling.
+
+Never expose internal stack traces, credentials, or sensitive technical information to public users.
+
+## Custom 404 Page
+
+Create a professionally designed 404 page for invalid or unavailable URLs.
+
+It must:
+- Match the active website theme.
+- Support Arabic and English.
+- Provide a clear explanation.
+- Include a button to return to the Home Page.
+- Use a proper HTTP 404 status.
+
+# 27. RESPONSIVE DESIGN & ACCESSIBILITY
+
+The entire application must work correctly on:
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile phones.
+
+Requirements:
+- Responsive layouts.
+- No horizontal overflow.
+- Appropriate typography scaling.
+- Touch-friendly controls.
+- Keyboard navigation.
+- Visible focus states.
+- Semantic HTML.
+- Accessible forms.
+- Appropriate color contrast.
+- Reduced-motion support where appropriate.
+
+Test both Arabic RTL and English LTR layouts at different screen sizes.
+
+# 28. DELETE CONFIRMATION & DATA SAFETY
+
+Before deleting important content, display a clear confirmation dialog.
+
+Apply this to:
+- Projects.
+- Skills.
+- Education events.
+- Contact messages.
+- Media files.
+- Other important content.
+
+The dialog must identify what is about to be deleted.
+
+Where technically appropriate, provide an undo or recovery mechanism.
+
+Avoid accidental destructive actions.
+
+# 29. DASHBOARD USER MANAGEMENT
+
+Design the authentication and authorization architecture so that it can support more than one administrator in the future.
+
+The initial installation must create the first administrator securely.
+
+Do not expose public administrator registration.
+
+Any future administrator creation or permission changes must be performed through a protected administrative process.
+
+Use role-based access control if multiple administrator roles are implemented.
+
+Do not create unnecessary public user accounts or social registration features.
+
+# 30. DEPLOYMENT & CONFIGURATION
+
+Prepare the project for real deployment.
+
+Requirements:
+- Separate development and production configuration.
+- Environment variables for sensitive settings.
+- Secure database configuration.
+- Production build configuration.
+- Proper server configuration.
+- HTTPS support.
+- Database migration instructions.
+- Backup and restore instructions.
+- Clear deployment documentation.
+
+Never commit real credentials, API keys, passwords, or private secrets to the source repository.
+
+# 31. TESTING & QUALITY ASSURANCE
+
+Test all major functionality before considering the project complete.
+
+## Public Website
+- All pages load correctly.
+- Navigation works.
+- Theme switching works.
+- Language switching works.
+- Arabic RTL works.
+- English LTR works.
+- Education Timeline works.
+- Project detail pages work.
+- Contact form works.
+- Responsive layouts work.
+
+## Admin Dashboard
+- Login works.
+- 2FA works.
+- Recovery codes work.
+- Unauthorized access is blocked.
+- Sidebar works on desktop and mobile.
+- CRUD operations work.
+- Messages management works.
+- Publishing workflows work.
+- Preview works.
+- Theme and language settings work.
+- Notifications work.
+- Activity logs work.
+- Backup and restore work.
+
+## Security
+- Validate authentication and authorization.
+- Test input validation.
+- Test file upload restrictions.
+- Test rate limiting.
+- Test protection of unpublished content.
+- Verify that secrets are not exposed.
+
+## Database
+- Verify relationships.
+- Verify migrations.
+- Verify data persistence.
+- Verify backup and restore.
+
+Do not mark a feature as complete merely because its interface exists. Test its actual behavior.
+
+# 32. DOCUMENTATION
+
+Provide clear documentation covering:
+
+1. Project overview.
+2. Technology stack.
+3. Installation.
+4. Environment configuration.
+5. Database setup.
+6. Database ERD.
+7. Database migrations.
+8. Initial administrator creation.
+9. Login and 2FA setup.
+10. Admin Dashboard usage.
+11. Theme management.
+12. Arabic and English content management.
+13. Publishing and preview workflows.
+14. Media uploads.
+15. Backup and restore.
+16. Testing.
+17. Deployment.
+18. Troubleshooting.
+
+The documentation must be understandable and practical.
+
+# 33. DEVELOPMENT WORKFLOW — STRICT PHASED IMPLEMENTATION
+
+Do not attempt to build the entire project in one uncontrolled step.
+
+Follow these phases in order.
+
+## Phase 1 — Planning & Architecture
+
+Before writing the full implementation, present:
+- Recommended technology stack.
+- Frontend architecture.
+- Backend architecture.
+- MySQL database design.
+- ERD.
+- API architecture.
+- Authentication architecture.
+- Project folder structure.
+- Theme architecture.
+- Multilingual architecture.
+- Security approach.
+- Required dependencies.
+- Development roadmap.
+
+Explain important technical decisions.
+
+Wait for approval before moving forward with major architectural decisions.
+
+## Phase 2 — Project Foundation
+- Initialize the project.
+- Configure the development environment.
+- Set up the frontend and backend.
+- Configure MySQL.
+- Create database migrations.
+- Establish the core design system.
+
+## Phase 3 — Public Website
+- Build the Navbar.
+- Build the Home Page.
+- Build About Me and Skills.
+- Build Projects.
+- Build Project Details.
+- Build Education Timeline.
+- Build Contact.
+- Build Footer.
+- Implement responsive behavior.
+
+## Phase 4 — Theme & Language Systems
+- Implement all 20 official themes.
+- Implement theme switching.
+- Implement persistent theme selection.
+- Implement Arabic and English.
+- Implement RTL and LTR.
+- Implement multilingual content management.
+- Implement multilingual SEO.
+
+## Phase 5 — Admin Dashboard
+- Build dashboard layout.
+- Build sidebar.
+- Build overview.
+- Build content management sections.
+- Build Hybrid Messages View.
+- Build settings.
+- Build media management.
+- Build preview system.
+
+## Phase 6 — Authentication & Security
+- Build administrator login.
+- Implement secure initial administrator setup.
+- Implement 2FA.
+- Implement recovery codes.
+- Protect all admin routes.
+- Implement authorization and session security.
+
+## Phase 7 — Backend Integration
+- Connect all interfaces to the backend.
+- Connect all data to MySQL.
+- Implement CRUD operations.
+- Implement publishing workflows.
+- Implement notifications.
+- Implement activity logs.
+
+## Phase 8 — Backup & Advanced Features
+- Implement automatic backups.
+- Implement manual backups.
+- Implement restore.
+- Complete SEO.
+- Complete performance optimization.
+- Complete error handling.
+
+## Phase 9 — Testing & Refinement
+- Test every feature.
+- Fix bugs.
+- Verify security.
+- Test mobile layouts.
+- Test RTL and LTR.
+- Test all 20 themes.
+- Verify database integrity.
+
+## Phase 10 — Deployment & Documentation
+- Prepare production deployment.
+- Configure environment variables.
+- Document installation.
+- Document administration.
+- Document backup and restore.
+- Deliver the final working project.
+
+# 34. STRICT DEVELOPMENT RULES
+
+Follow these rules throughout development:
+
+1. Do not ignore any requirement in this specification.
+2. Do not silently remove approved functionality.
+3. Do not replace MySQL with another database.
+4. Do not change the official 20 theme names or HEX codes.
+5. Do not add extra themes.
+6. Do not create a frontend-only prototype and call it complete.
+7. Do not use hardcoded demo data as a substitute for real database integration.
+8. Do not expose unpublished content through public APIs.
+9. Do not store passwords or recovery codes in plain text.
+10. Do not expose administrator routes without authentication.
+11. Do not leave unfinished buttons or nonfunctional controls.
+12. Do not introduce unnecessary dependencies.
+13. Do not sacrifice accessibility or responsiveness.
+14. Do not break Arabic RTL when implementing English LTR.
+15. Do not break English LTR when implementing Arabic RTL.
+16. Do not make major architectural decisions without explaining them first.
+17. Keep the code modular, maintainable, and well organized.
+18. Use consistent naming conventions.
+19. Handle errors properly.
+20. Test features before declaring them complete.
+
+If a requirement is technically problematic, explain the issue and propose a suitable solution instead of silently omitting it.
+
+# 35. FINAL ACCEPTANCE CRITERIA
+
+The project is considered complete only when:
+- The public website works correctly.
+- All four main pages are implemented.
+- The Hero and all homepage sections are complete.
+- The Navbar is fixed and uses Glassmorphism.
+- Mobile navigation works.
+- All 20 approved themes work.
+- Every official HEX code is preserved.
+- Theme switching is instant and persistent.
+- Arabic and English both work.
+- RTL and LTR layouts are correct.
+- Language switching preserves the current page where possible.
+- The Education Timeline works as specified.
+- Every project has its own details page.
+- The Contact form stores messages in MySQL.
+- The Admin Dashboard is fully functional.
+- Dashboard dark and light modes work independently.
+- The sidebar works on desktop and mobile.
+- Administrator authentication works.
+- 2FA and recovery codes work.
+- Initial administrator setup is secure.
+- All admin routes are protected.
+- Content management works with real database data.
+- Instant Publish and Draft & Publish work.
+- Draft previews work without public exposure.
+- Messages Hybrid View works.
+- Notifications work.
+- Activity logs work.
+- Media management works.
+- Backup and restore work.
+- SEO features work.
+- The custom 404 page works.
+- Responsive design works.
+- Security checks are completed.
+- Documentation is delivered.
+- The application is ready for deployment.
+
+# 36. FINAL PROJECT IDENTITY
+
+**Project:** THE CODEFATHER  
+**Tagline:** THINK • CODE • CREATE  
+**Database:** MySQL  
+**Languages:** Arabic & English  
+**Default Theme:** Dark Techn  
+**Available Themes:** Exactly 20 approved themes  
+**Main Interface:** Responsive Public Portfolio  
+**Administration:** Secure Admin Dashboard  
+**Content Management:** Integrated CMS  
+**Authentication:** Password + 2FA + Recovery Codes
+
+The final result must feel like a premium, carefully engineered personal technology brand — not a generic portfolio template.
+
+# 37. FINAL IMPLEMENTATION INSTRUCTION
+
+Start with **Phase 1 — Planning & Architecture only**.
+
+Do not immediately generate the entire application.
+
+First, analyze this complete specification and present:
+
+1. The recommended technology stack and reasons for choosing it.
+2. The complete system architecture.
+3. The MySQL database schema.
+4. The ERD.
+5. The API structure.
+6. The project folder structure.
+7. The authentication and security architecture.
+8. The 20-theme implementation strategy.
+9. The Arabic/English localization and RTL/LTR strategy.
+10. The development roadmap with clear phases.
+11. Any technical risks, dependencies, or important decisions that require approval.
+
+Make sure the proposed architecture supports every requirement in this document.
+
+Clearly distinguish between:
+- Requirements already specified and approved.
+- Technical recommendations.
+- Decisions that still require my approval.
+
+Do not silently change any approved requirement.
+
+After presenting Phase 1, stop and wait for my approval before beginning Phase 2.
+
+**The goal is to build THE CODEFATHER correctly, systematically, securely, and completely — with no missing features or undocumented shortcuts.**
